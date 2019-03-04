@@ -46,8 +46,8 @@ max_retries = 5
 
 # perform check to make sure laser is picking up correctly
 def start():
-    if adc.read() <= adc_sensitivity:
-        print('ADC value is below sensitivity at start!\nPlease adjust sensitivity or check sensor for blockage.')
+    if round(adc.read() / 2) <= adc_sensitivity:
+        print('ADC value is low during startup!\nPlease adjust sensitivity or check sensor for blockage.')
         sys.exit(1)
     return True
 
