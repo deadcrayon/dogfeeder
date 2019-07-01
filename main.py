@@ -1,5 +1,3 @@
-# Author: tim walton [tim@t-0.dev]
-
 import machine, time, sys, network
 from machine import Pin
 
