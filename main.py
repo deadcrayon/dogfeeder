@@ -1,3 +1,5 @@
+#Author: timdwalton@gmail.com
+
 import machine, time, sys, network
 from machine import Pin
 
